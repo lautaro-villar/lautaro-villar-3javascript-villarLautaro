@@ -1,0 +1,12 @@
+.CajaPerros{
+    color: blue;
+   /*border: 1px gold solid;*/
+   display: flex;
+    }
+
+.variedadPerro{
+   
+    border: 1px green solid;
+}
+
+
