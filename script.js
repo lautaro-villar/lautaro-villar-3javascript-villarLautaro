@@ -9,19 +9,27 @@ let variedadPerros = [
    { id: 8, categoria: "guardian", raza: "Rottweiler", cantidad: 5, precio: 20000, imagen: "./imagenes-perros/Rottweiler.jpg" },
    { id: 9, categoria: "guardian", raza: "Doberman", cantidad: 4, precio: 55000, imagen: "./imagenes-perros/Doberman.jpg" },
    { id: 10, categoria: "guardian", raza: "PitBull", cantidad: 3, precio: 35500, imagen: "./imagenes-perros/PitBull.jpg" },
-   { id: 11, categoria: "para dueños deportistas", raza: "Weimaraner", cantidad: 7, precio: 144500, imagen: "./imagenes-perros/Weimaraner.jpg" },
-   { id: 12, categoria: "para dueños deportistas", raza: "BracoAleman", cantidad: 4, precio: 50000, imagen: "./imagenes-perros/BracoAleman.jpg" },
-   { id: 13, categoria: "para dueños deportistas", raza: "BorderCollie", cantidad: 4, precio: 89000, imagen: "./imagenes-perros/BorderCollie.jpg" },
-   { id: 14, categoria: "para dueños deportistas", raza: "Dalmata", cantidad: 6, precio: 29000, imagen: "./imagenes-perros/Dalmata.jpg" },
-   { id: 15, categoria: "para dueños deportistas", raza: "JackRussell", cantidad: 2, precio: 60000, imagen: "./imagenes-perros/JackRussell.jpg" }
+   { id: 11, categoria: "paraDueñosDeportistas", raza: "Weimaraner", cantidad: 7, precio: 144500, imagen: "./imagenes-perros/Weimaraner.jpg" },
+   { id: 12, categoria: "paraDueñosDeportistas", raza: "BracoAleman", cantidad: 4, precio: 50000, imagen: "./imagenes-perros/BracoAleman.jpg" },
+   { id: 13, categoria: "paraDueñosDeportistas", raza: "BorderCollie", cantidad: 4, precio: 89000, imagen: "./imagenes-perros/BorderCollie.jpg" },
+   { id: 14, categoria: "paraDueñosDeportistas", raza: "Dalmata", cantidad: 6, precio: 29000, imagen: "./imagenes-perros/Dalmata.jpg" },
+   { id: 15, categoria: "ParaDueñosDeportistas", raza: "JackRussell", cantidad: 2, precio: 60000, imagen: "./imagenes-perros/JackRussell.jpg" }
 ]
 
-let carrito = []
+
 let ContenedorCarrito = document.getElementById("ContenedorCarrito")
 
 let Perros = document.getElementById("ContenedorPerros")
 renderizarPerros(variedadPerros)
-
+//
+//
+let carrito = []
+if (localStorage.getItem("carrito")) {
+   carrito = JSON.parse(localStorage.getItem("carrito"))
+}
+renderizar("carrito")
+ //
+ //
 let navegador = document.getElementById("navegador")
 navegador.addEventListener("input", renderizarPerrosFiltrados)
 
@@ -31,11 +39,13 @@ function renderizarPerrosFiltrados() {
    renderizarPerros(PerrosFiltrados)
 }
 
+
+
 function renderizarPerros(variedadPerros) {
    Perros.innerHTML = ""
    for (const variedadPerro of variedadPerros) {
       let seccionPerros = document.createElement("div")
-      seccionPerros.className = "perro"
+      seccionPerros.className = "perro" + variedadPerro.categoria
       seccionPerros.id = variedadPerro.id
 
       seccionPerros.innerHTML = `<h3> ${variedadPerro.raza} </h1>
@@ -64,7 +74,7 @@ function AgregarAlCarro(e) {
    } else {
       carrito.push({ id: PerritoBuscado.id, raza: PerritoBuscado.raza, precioUnitario: PerritoBuscado.precio, cantidad: 1, subtotal: PerritoBuscado.precio })
    }
-
+   localStorage.setItem("carrito", JSON)
    renderizar(carrito)
 }
 
