@@ -1,12 +1,45 @@
-.CajaPerros{
-    color: blue;
-   /*border: 1px gold solid;*/
-   display: flex;
-    }
-
-.variedadPerro{
-   
-    border: 1px green solid;
+.verde{
+    color: green;
+    
 }
+ 
+.rojo{
+    color: red;
+    
+}
+
+.amarillo{
+    color: gold;
+}
+
+
+.perro{
+width: 400px;
+height: 400px;
+border: 2px solid black;
+margin-bottom: 10px;
+}
+
+#ContenedorPerros, .flex{
+    display: flex;
+    /*gap: 5px;*/
+}
+
+h3{
+    background-color: blueviolet;
+}
+
+ img{
+width: 200px ;
+height: 200px;
+}
+
+#ContenedorCarrito{
+    width: 500px;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+
 
 
