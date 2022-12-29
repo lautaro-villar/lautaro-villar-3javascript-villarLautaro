@@ -1,3 +1,7 @@
+body{
+    background-image: url();
+}
+
 .verde{
     color: green;
     
@@ -21,14 +25,15 @@ margin-bottom: 10px;
 }
 
 #ContenedorPerros, .flex{
+    /*display: grid;*/
     display: flex;
     gap: 5px;
+   /* grid-template-rows: "familiar" , "guardian","deportista"*/
 }
 
 h3{
    /* background-color: blueviolet;*/
     text-align: center;
-    
 }
 
  img{
@@ -46,6 +51,7 @@ height: 200px;
 
 .perrofamiliar{
     border: 2px solid black;
+    grid-area: "familiar";
 }
 
 .perrofamiliar h3{
@@ -54,6 +60,7 @@ height: 200px;
 
 .perroguardian{
     border: 2px solid black;
+    grid-area: "guardian";
 }
 
 .perroguardian h3{
@@ -62,6 +69,7 @@ height: 200px;
 
 .perroparaDueñosDeportistas{
     border: 2px solid black;
+    grid-area: "deportistas";
 }
 
 .perroparaDueñosDeportistas h3{

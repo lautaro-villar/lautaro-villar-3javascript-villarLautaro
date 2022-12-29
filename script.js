@@ -13,7 +13,7 @@ let variedadPerros = [
    { id: 12, categoria: "paraDueñosDeportistas", raza: "BracoAleman", cantidad: 4, precio: 50000, imagen: "./imagenes-perros/BracoAleman.jpg" },
    { id: 13, categoria: "paraDueñosDeportistas", raza: "BorderCollie", cantidad: 4, precio: 89000, imagen: "./imagenes-perros/BorderCollie.jpg" },
    { id: 14, categoria: "paraDueñosDeportistas", raza: "Dalmata", cantidad: 6, precio: 29000, imagen: "./imagenes-perros/Dalmata.jpg" },
-   { id: 15, categoria: "ParaDueñosDeportistas", raza: "JackRussell", cantidad: 2, precio: 60000, imagen: "./imagenes-perros/JackRussell.jpg" }
+   { id: 15, categoria: "paraDueñosDeportistas", raza: "JackRussell", cantidad: 2, precio: 60000, imagen: "./imagenes-perros/JackRussell.jpg" },
 ]
 
 
@@ -74,7 +74,7 @@ function AgregarAlCarro(e) {
    } else {
       carrito.push({ id: PerritoBuscado.id, raza: PerritoBuscado.raza, precioUnitario: PerritoBuscado.precio, cantidad: 1, subtotal: PerritoBuscado.precio })
    }
-   localStorage.setItem("carrito", JSON)
+   localStorage.setItem("carrito", JSON.stringify(carrito))
    renderizar(carrito)
 }
 
