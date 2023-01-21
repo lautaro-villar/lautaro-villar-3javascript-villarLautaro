@@ -96,3 +96,18 @@ function renderizar(mascotas) {
    let total = carrito.reduce((acc, valorActual) => acc + valorActual.subtotal, 0)
    ContenedorCarrito.innerHTML += `<h3>TOTAL$${total}</h3> `
  }
+
+let botonCompra = document.getElementById("comprar")
+botonCompra.addEventListener("click", () => {
+
+   Swal.fire({
+      icon: 'success',
+      title: 'perrito comprado',
+      showConfirmButton: false,
+      timer: 2000
+    })
+
+   localStorage.removeItem("carrito")
+   carrito = []
+   renderizarPerros(carrito)
+})

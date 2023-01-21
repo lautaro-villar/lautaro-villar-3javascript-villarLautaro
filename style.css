@@ -1,7 +1,3 @@
-body{
-    background-image: url();
-}
-
 .verde{
     color: green;
     
@@ -25,14 +21,11 @@ margin-bottom: 10px;
 }
 
 #ContenedorPerros, .flex{
-    /*display: grid;*/
     display: flex;
     gap: 5px;
-   /* grid-template-rows: "familiar" , "guardian","deportista"*/
 }
 
 h3{
-   /* background-color: blueviolet;*/
     text-align: center;
 }
 
