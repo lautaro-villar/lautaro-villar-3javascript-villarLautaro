@@ -1,0 +1,17 @@
+[
+    { "id": 1, "categoria": "familiar", "raza": "Boxer", "cantidad": 1, "precio": 25500, "imagen": "./imagenes-perros/Boxer.jpg" },
+    { "id": 2, "categoria": "familiar", "raza": "Golden", "cantidad": 2, "precio": 89900, "imagen": "./imagenes-perros/Golden.jpg" },
+    { "id": 3, "categoria": "familiar", "raza": "Labrador", "cantidad": 3, "precio": 65000, "imagen": "./imagenes-perros/Labrador.jpg" },
+    { "id": 4, "categoria": "familiar", "raza": "Shiba inu", "cantidad": 1, "precio": 380000, "imagen": "./imagenes-perros/ShibaInu.jpg" },
+    { "id": 5, "categoria": "familiar", "raza": "Husky", "cantidad": 1, "precio": 70000, "imagen": "./imagenes-perros/Husky.jpg" },
+    { "id": 6, "categoria": "guardian", "raza": "Pastor aleman", "cantidad": 6, "precio": 60000, "imagen": "./imagenes-perros/PastorAleman.jpg" },
+    { "id": 7, "categoria": "guardian", "raza": "DogoArgentino", "cantidad": 5, "precio": 110000, "imagen": "./imagenes-perros/DogoArgentino.jpg" },
+    { "id": 8, "categoria": "guardian", "raza": "Rottweiler", "cantidad": 5, "precio": 20000, "imagen": "./imagenes-perros/Rottweiler.jpg" },
+    { "id": 9, "categoria": "guardian", "raza": "Doberman", "cantidad": 4, "precio": 55000, "imagen": "./imagenes-perros/Doberman.jpg" },
+    { "id": 10, "categoria": "guardian", "raza": "PitBull", "cantidad": 3, "precio": 35500, "imagen": "./imagenes-perros/PitBull.jpg" },
+    { "id": 11, "categoria": "paraDueñosDeportistas", "raza": "Weimaraner", "cantidad": 7, "precio": 144500, "imagen": "./imagenes-perros/Weimaraner.jpg" },
+    { "id": 12, "categoria": "paraDueñosDeportistas", "raza": "BracoAleman", "cantidad": 4, "precio": 50000, "imagen": "./imagenes-perros/BracoAleman.jpg" },
+    { "id": 13, "categoria": "paraDueñosDeportistas", "raza": "BorderCollie", "cantidad": 4, "precio": 89000, "imagen": "./imagenes-perros/BorderCollie.jpg" },
+    { "id": 14, "categoria": "paraDueñosDeportistas", "raza": "Dalmata", "cantidad": 6, "precio": 29000, "imagen": "./imagenes-perros/Dalmata.jpg" },
+    { "id": 15, "categoria": "paraDueñosDeportistas", "raza": "JackRussell", "cantidad": 2, "precio": 60000, "imagen": "./imagenes-perros/JackRussell.jpg" }
+ ]
