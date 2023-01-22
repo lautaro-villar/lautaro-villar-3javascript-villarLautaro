@@ -1,70 +1,80 @@
-.verde{
-    color: green;
-    
-}
- 
-.rojo{
-    color: red;
-    
+body{
+    background-image: url(./imagen-fondo/FondoPerritos.jpg);
 }
 
-.amarillo{
+.verde {
+    color: green;
+}
+
+.rojo {
+    color: red;
+}
+
+.amarillo {
     color: gold;
 }
 
-
-.perro{
-width: 400px;
-height: 400px;
-border: 2px solid black;
-margin-bottom: 10px;
+.perro {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
-#ContenedorPerros, .flex{
-    display: flex;
+#ContenedorPerros,
+.flex {
+    display: grid;
     gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "auto auto auto"
+        "auto auto auto"
 }
 
-h3{
+h3 {
     text-align: center;
+    background-color: antiquewhite;
 }
 
- img{
-width: 200px ;
-height: 200px;
+img {
+    width: 200px;
+    height: 200px;
 }
 
-#ContenedorCarrito{
+p, .perrofamiliar, .perroguardian, .perroparaDueñosDeportistas{
+    background-color: rgb(255, 255, 255);
+}
+
+#ContenedorCarrito {
     width: 500px;
     min-height: 150px;
     border: 2px solid black;
 }
 
-
-
-.perrofamiliar{
+.perrofamiliar {
     border: 2px solid black;
-    grid-area: "familiar";
 }
 
-.perrofamiliar h3{
+.perrofamiliar h3 {
     background-color: green;
+   /* color: antiquewhite;*/
 }
 
-.perroguardian{
+.perroguardian {
     border: 2px solid black;
-    grid-area: "guardian";
 }
 
-.perroguardian h3{
+.perroguardian h3 {
     background-color: red;
+    /*color: antiquewhite*/
 }
 
-.perroparaDueñosDeportistas{
+.perroparaDueñosDeportistas {
     border: 2px solid black;
-    grid-area: "deportistas";
 }
 
-.perroparaDueñosDeportistas h3{
-    background-color: yellow;
- }
+.perroparaDueñosDeportistas h3 {
+    background-color: gold;
+    /*color: antiquewhite*/
+}
