@@ -2,6 +2,16 @@ body{
     background-image: url(./imagen-fondo/FondoPerritos.jpg);
 }
 
+#titulo{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.subtitulo{
+    background-color: antiquewhite;
+    width: 27%;
+}
+
 .verde {
     color: green;
 }
@@ -58,7 +68,6 @@ p, .perrofamiliar, .perroguardian, .perroparaDueñosDeportistas{
 
 .perrofamiliar h3 {
     background-color: green;
-   /* color: antiquewhite;*/
 }
 
 .perroguardian {
@@ -67,7 +76,6 @@ p, .perrofamiliar, .perroguardian, .perroparaDueñosDeportistas{
 
 .perroguardian h3 {
     background-color: red;
-    /*color: antiquewhite*/
 }
 
 .perroparaDueñosDeportistas {
@@ -76,5 +84,10 @@ p, .perrofamiliar, .perroguardian, .perroparaDueñosDeportistas{
 
 .perroparaDueñosDeportistas h3 {
     background-color: gold;
-    /*color: antiquewhite*/
 }
+
+.lista{
+    background-color: antiquewhite;
+    width: 12%;
+}
+
